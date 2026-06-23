@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sirius Core — Tecnologia sem filtro</title>
+  <meta name="description" content="Portal de tecnologia com análises, tutoriais e notícias sobre o universo tech. Feito por um dev apaixonado por código e redes." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="logo">
+        <svg class="logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16 2L4 7v9c0 6.6 5.1 12.8 12 14.3C22.9 28.8 28 22.6 28 16V7L16 2z" fill="#0ea5e920" stroke="#38bdf8" stroke-width="1.5" stroke-linejoin="round"/>
+          <circle cx="16" cy="14" r="3" fill="#38bdf8"/>
+          <path d="M16 11v-4M16 21v-4M11 14h-4M25 14h-4" stroke="#38bdf8" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="16" cy="14" r="6" stroke="#38bdf840" stroke-width="1"/>
+        </svg>
+        <span class="logo-text">Sirius <span>Core</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Início</a></li>
+        <li><a href="artigos.html">Artigos</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="https://github.com/JoaoBertocco" target="_blank" rel="noopener" class="nav-cta">GitHub →</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').style.display = document.querySelector('.nav-links').style.display === 'flex' ? 'none' : 'flex'">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="hero-eyebrow">Portal de Tecnologia</p>
+      <h1>Tecnologia explicada<br>do jeito <em>certo</em></h1>
+      <p class="hero-sub">Redes, desenvolvimento, segurança e tudo que move o mundo digital — sem rodeios, sem enrolação.</p>
+      <div class="hero-actions">
+        <a href="artigos.html" class="btn btn-primary">Ver artigos</a>
+        <a href="sobre.html" class="btn btn-outline">Sobre o autor</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card-stack">
+        <div class="hero-card">
+          <p class="hero-card-tag">Redes</p>
+          <h3>Como funciona o protocolo TCP/IP na prática</h3>
+          <p class="hero-card-meta">5 min de leitura</p>
+        </div>
+        <div class="hero-card">
+          <p class="hero-card-tag">Segurança</p>
+          <h3>Subnetting: calculando máscaras de rede do zero</h3>
+          <p class="hero-card-meta">8 min de leitura</p>
+        </div>
+        <div class="hero-card">
+          <p class="hero-card-tag">Dev</p>
+          <h3>Git para iniciantes: do primeiro commit ao pull request</h3>
+          <p class="hero-card-meta">6 min de leitura</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"><div></div></div>
+
+  <!-- DESTAQUE -->
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title">Em <span>destaque</span></h2>
+      <a href="artigos.html" class="see-all">Ver todos →</a>
+    </div>
+    <div class="featured-grid">
+      <a href="artigo.html" class="article-featured">
+        <span class="tag">Redes</span>
+        <h2>Como a internet realmente funciona: da fibra ao seu navegador</h2>
+        <p>Uma viagem completa pelos bastidores da rede global — roteadores, protocolos, DNS e tudo que acontece no segundo entre você digitar uma URL e a página aparecer.</p>
+        <div class="article-meta">
+          <span>João Bertocco</span>
+          <span class="dot"></span>
+          <span>Jun 2025</span>
+          <span class="dot"></span>
+          <span>10 min de leitura</span>
+        </div>
+      </a>
+      <div class="article-sidebar">
+        <a href="artigo.html" class="article-card">
+          <span class="tag tag-green">Dev</span>
+          <h3>Subnetting descomplicado: guia prático com exemplos reais</h3>
+          <p>Aprenda a calcular sub-redes sem decorar fórmulas.</p>
+          <div class="article-meta">
+            <span>Mai 2025</span>
+            <span class="dot"></span>
+            <span>8 min</span>
+          </div>
+        </a>
+        <a href="artigo.html" class="article-card">
+          <span class="tag tag-purple">Segurança</span>
+          <h3>O que é um firewall e como ele protege sua rede</h3>
+          <p>Conceitos, tipos e quando cada solução faz mais sentido.</p>
+          <div class="article-meta">
+            <span>Abr 2025</span>
+            <span class="dot"></span>
+            <span>7 min</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"><div></div></div>
+
+  <!-- RECENTES -->
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title">Artigos <span>recentes</span></h2>
+      <a href="artigos.html" class="see-all">Ver todos →</a>
+    </div>
+    <div class="articles-grid">
+      <a href="artigo.html" class="article-card">
+        <span class="tag tag-amber">Carreira</span>
+        <h3>Front-end em 2025: o que o mercado realmente pede de um júnior</h3>
+        <p>React, TypeScript, Git — o que é essencial e o que é diferencial na hora de conseguir sua primeira vaga dev.</p>
+        <div class="article-meta">
+          <span>Jun 2025</span>
+          <span class="dot"></span>
+          <span>6 min</span>
+        </div>
+      </a>
+      <a href="artigo.html" class="article-card">
+        <span class="tag">Redes</span>
+        <h3>IPv4 vs IPv6: por que a transição ainda não acabou</h3>
+        <p>O mundo já deveria ter migrado há anos. Entenda os obstáculos técnicos e políticos que atrasam a mudança.</p>
+        <div class="article-meta">
+          <span>Mai 2025</span>
+          <span class="dot"></span>
+          <span>9 min</span>
+        </div>
+      </a>
+      <a href="artigo.html" class="article-card">
+        <span class="tag tag-red">IA</span>
+        <h3>LLMs por dentro: como um modelo de linguagem "pensa"</h3>
+        <p>Tokenização, atenção, embeddings — uma explicação honesta sem precisar de matemática avançada.</p>
+        <div class="article-meta">
+          <span>Abr 2025</span>
+          <span class="dot"></span>
+          <span>12 min</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- SOBRE STRIP -->
+  <div class="sobre-strip">
+    <div class="sobre-inner">
+      <div>
+        <h2>Quem está por <span>trás do core</span></h2>
+        <p>Sou João Bertocco, desenvolvedor front-end e especialista em redes e telecomunicações. Criei o Sirius Core para compartilhar conhecimento técnico de forma acessível — sem jargão desnecessário, sem clickbait.</p>
+        <div class="skills-list">
+          <span class="skill-badge">HTML & CSS</span>
+          <span class="skill-badge">JavaScript</span>
+          <span class="skill-badge">React</span>
+          <span class="skill-badge">Redes TCP/IP</span>
+          <span class="skill-badge">Git & GitHub</span>
+          <span class="skill-badge">Python</span>
+        </div>
+      </div>
+      <div class="sobre-stats">
+        <div class="stat-card">
+          <p class="num">12+</p>
+          <p class="label">Artigos publicados</p>
+        </div>
+        <div class="stat-card">
+          <p class="num">5</p>
+          <p class="label">Anos em TI</p>
+        </div>
+        <div class="stat-card">
+          <p class="num">3</p>
+          <p class="label">Projetos no GitHub</p>
+        </div>
+        <div class="stat-card">
+          <p class="num">∞</p>
+          <p class="label">Café consumido</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter">
+    <div class="newsletter-inner">
+      <div class="newsletter-text">
+        <h2>Fique por dentro</h2>
+        <p>Novos artigos toda semana, direto no seu email. Sem spam.</p>
+      </div>
+      <div class="newsletter-form">
+        <input type="email" placeholder="seu@email.com" />
+        <button class="btn btn-primary" type="button">Inscrever</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <a href="index.html" class="logo" style="font-size: 0.9rem;">
+        <svg class="logo-icon" style="width:22px;height:22px" viewBox="0 0 32 32" fill="none">
+          <path d="M16 2L4 7v9c0 6.6 5.1 12.8 12 14.3C22.9 28.8 28 22.6 28 16V7L16 2z" fill="#0ea5e920" stroke="#38bdf8" stroke-width="1.5" stroke-linejoin="round"/>
+          <circle cx="16" cy="14" r="3" fill="#38bdf8"/>
+        </svg>
+        Sirius <span style="color:var(--accent)">Core</span>
+      </a>
+      <ul class="footer-links">
+        <li><a href="artigos.html">Artigos</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="https://github.com/JoaoBertocco" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://linkedin.com/in/joaobertocco" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+      <p class="footer-copy">© 2025 Sirius Core</p>
+    </div>
+  </footer>
+
+</body>
+</html>
